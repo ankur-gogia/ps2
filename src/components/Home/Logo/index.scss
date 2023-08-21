@@ -1,0 +1,101 @@
+.logo-container {
+  width: 450px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  transition: all 0.7s ease-in-out;
+
+  &:hover{
+  transform: scale(1.1);
+  transition: 0.7s;
+  transition: all 0.7s ease-in-out;
+  }
+
+  .solid-logo {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  transform: rotateZ(30deg);
+  opacity: 0;
+  animation: fadeIn 4s ease-in-out 3s forwards;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+}
+
+  .anime {
+    stroke-dasharray: 2900;
+    stroke-dashoffset: 4000;
+    animation: dash 5s linear forwards;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  .longest {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 5000;
+    animation: dash 5s linear forwards;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  .short {
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1500;
+    animation: dash 2s linear forwards;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  .long {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 800;
+    animation: dash 5s linear forwards;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  svg {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    transform: rotateZ(30deg);
+  }
+
+
+
+  .svg-container {
+    stroke: #ffd700;
+    stroke-width: 2;
+  }
+}
+
+
